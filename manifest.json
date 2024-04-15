@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Takenology.ai",
+  "version": "1.0",
+  "description": "Capture and generate optimized data packages for LLM component generation",
+  "permissions": ["activeTab", "contextMenus", "downloads"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["html2canvas.min.js", "content_script.js"],
+      "css": ["overlay.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["overlay.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
