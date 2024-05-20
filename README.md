@@ -89,15 +89,17 @@ Follow these steps to install the extension:
 
 ## Notifications
 
-<div style="background-color: #4CAF50; color: white; padding: 5px; border-radius: 4px; display: inline-block;">
+<!-- Success Notification -->
+<p style="background-color: #4CAF50; color: white; padding: 5px; border-radius: 4px; display: inline-block;">
   <img src="icons/takenology.png" alt="Takenology Logo" width="20" style="vertical-align: middle; margin-right: 10px;" />
   Example success notification!
-</div>
+</p>
 
-<div style="background-color: #F44336; color: white; padding: 5px; border-radius: 4px; display: inline-block;">
+<!-- Failure Notification -->
+<p style="background-color: #F44336; color: white; padding: 5px; border-radius: 4px; display: inline-block;">
   <img src="icons/takenology.png" alt="Takenology Logo" width="20" style="vertical-align: middle; margin-right: 10px;" />
   Example failure notification.
-</div>
+</p>
 
 ## Debugging
 
