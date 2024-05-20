@@ -1,64 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>WebPrompt.ai</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebToLLM</title>
     <style>
+      html {
+        margin: 0;
+        padding: 0;
+        border-radius: 10px; /* Added border-radius to html */
+        overflow: hidden;
+      }
       body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        min-width: 300px;
-        padding: 30px;
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        border-radius: 10px; /* Added border-radius to body */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
       }
-      h3 {
-        margin: 0 0 30px;
-        color: #333;
-        font-size: 24px;
-        font-weight: 600;
-      }
-      #status {
-        margin-bottom: 20px;
-        padding: 10px;
-        background-color: #e9ecef;
-        border-radius: 5px;
-        color: #495057;
-        font-size: 14px;
-      }
-      button {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-      button:hover {
-        background-color: #0056b3;
-      }
-      #copy-btn {
-        background-color: #6c757d;
-      }
-      #copy-btn:hover {
-        background-color: #495057;
+      #popup-content {
+        padding: 20px;
+        background-color: white; /* Ensure the background is white */
+        border-radius: 10px; /* Apply border-radius to content */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
     </style>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/overlay.css" />
   </head>
   <body>
-    <h3>Takenology.ai</h3>
-    <div id="status"></div>
-    <button id="download-btn" style="display: none">
-      Download Prompt Data
-    </button>
-    <button id="copy-btn" style="display: none">
-      Copy Prompt to Clipboard
-    </button>
-    <script src="popup.js"></script>
+    <div
+      class="navbar"
+      id="popup-content"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <img src="icons/takenology.png" style="height: 40px; filter: invert(1)" />
+      <h1 style="font-size: 30px">WebToLLM</h1>
+    </div>
+    <div class="icon-container">
+      <div class="icon-button" id="download-json">
+        <img src="icons/download-json.png" alt="Download JSON" />
+      </div>
+      <div class="icon-button" id="download-text">
+        <img src="icons/download-text.png" alt="Download Text" />
+      </div>
+      <div class="icon-button" id="download-screenshot">
+        <img src="icons/download-image.png" alt="Download Screenshot" />
+      </div>
+      <div class="icon-button" id="copy">
+        <img src="icons/copy-clipboard.png" alt="Copy to Clipboard" />
+      </div>
+    </div>
+    <script src="libs/html2canvas.min.js" defer></script>
+    <script type="module" src="popup.js" defer></script>
   </body>
 </html>

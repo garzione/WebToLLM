@@ -1,26 +1,63 @@
 {
   "manifest_version": 3,
-  "name": "Takenology.ai",
+  "name": "WebToLLM",
   "version": "1.0",
-  "description": "Capture and generate optimized data packages for LLM component generation",
-  "permissions": ["activeTab", "contextMenus", "downloads"],
+  "description": "Effortlessly capture HTML, CSS, and screenshots from any website to recreate cool UI components using large language models.",
+  "permissions": ["activeTab", "contextMenus", "downloads", "clipboardWrite"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "scripts/background.js",
+    "type": "module"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["html2canvas.min.js", "content_script.js"],
-      "css": ["overlay.css"]
+      "js": ["libs/html2canvas.min.js", "scripts/content_script.js"],
+      "css": ["css/overlay.css"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["overlay.css"],
+      "resources": [
+        "css/overlay.css",
+        "libs/html2canvas.min.js",
+        "scripts/logging.js",
+        "icons/takenology.png"
+      ],
       "matches": ["<all_urls>"]
     }
   ],
   "action": {
     "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/takenology.png",
+    "48": "icons/takenology.png",
+    "128": "icons/takenology.png"
+  },
+  "commands": {
+    "capture_element": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C"
+      },
+      "description": "Capture element"
+    },
+    "download_txt": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+T"
+      },
+      "description": "Download data as TXT"
+    },
+    "download_json": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+J"
+      },
+      "description": "Download data as JSON"
+    },
+    "copy_to_clipboard": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "Copy data to clipboard"
+    }
   }
 }

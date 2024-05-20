@@ -1,7 +1,0 @@
-#llmigrate-overlay {
-  position: absolute;
-  border: 2px dashed #4caf50;
-  background-color: rgba(76, 175, 80, 0.3);
-  z-index: 9999;
-  pointer-events: none;
-}

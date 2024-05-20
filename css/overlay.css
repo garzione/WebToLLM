@@ -1,0 +1,51 @@
+#takenology-overlay {
+  position: absolute;
+  border: 2px dashed #4caf50;
+  background-color: rgba(76, 175, 80, 0.3);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f8;
+  color: #333;
+  text-align: center;
+  width: 400px;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px; /* Control spacing between icons */
+}
+.icon-button img,
+.data-icon img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0.5; /* Initially disabled */
+}
+.icon-button.enabled img {
+  opacity: 1; /* Enabled when data is present */
+}
+.data-icon img {
+  border: 3px solid transparent;
+  cursor: default;
+}
+.no-data {
+  border-color: red;
+}
+.data-found {
+  border-color: green;
+  display: none; /* Ensure only one is displayed */
+}
+.hidden {
+  display: none;
+}
+footer {
+  margin-top: 20px;
+}
