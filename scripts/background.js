@@ -1,7 +1,7 @@
 /**
  * WebToLLM - A Chrome extension for capturing web content and transferring it to Large Language Models (LLMs)
  * @version 1.0.0
- * @author Justin M. Garzione (Le Pelley Avancée) <contact@lepelley.uk>
+ * @author Justin M. Garzione (Le Pelley Avancée) <support@web2llm.lepelley.uk>
  * @license MIT
  * @description WebToLLM is a powerful Chrome extension designed to streamline the process of capturing, downloading, and copying webpage elements. Ideal for developers, designers, and researchers, this tool allows users to effortlessly extract and save webpage content, ensuring quick access to necessary data.
  * @see source: https://github.com/garzione/WebToLLM
