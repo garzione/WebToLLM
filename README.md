@@ -1,17 +1,19 @@
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <div style="display: flex; align-items: center;">
-    <a href="https://github.com/garzione/takenology">
-      <img src="icons/logo/web2llm.gif" alt="Takenology Logo" width="50"/>
-    </a>
-    <span style="font-size: 2em; font-weight: bold; margin-left: 10px;">WebToLLM</span>
-  </div>
-  <div style="display: flex; flex-direction: column; align-items: flex-end;">
-    <img src="https://img.shields.io/github/last-commit/garzione/takenology?color=purple&label=Last%20Commit" alt="Latest Commit">
-    <img src="https://img.shields.io/badge/License-MIT-black.svg" alt="License: MIT" style="margin-top: 5px;">
-  </div>
-</div>
-
-</div></div>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100%;">
+      <div style="display: flex; align-items: center;">
+        <a href="https://github.com/garzione/WebToLLM">
+          <img src="docs/icons/logo/web2llm.gif" alt="WebToLLM Logo" width="50"/>
+        </a>
+        <span style="font-size: 2em; font-weight: bold; margin-left: 10px;">WebToLLM</span>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end;">
+        <img src="https://img.shields.io/github/last-commit/garzione/WebToLLM?color=purple&label=Last%20Commit" alt="Latest Commit">
+        <img src="https://img.shields.io/badge/License-MIT-black.svg" alt="License: MIT" style="margin-top: 5px;">
+      </div>
+    </div>
+  </foreignObject>
+</svg>
 
 ## Description
 
@@ -19,10 +21,10 @@
 
 ## Development
 
-![GitHub contributors](https://img.shields.io/github/contributors/garzione/takenology?style=social)
-![Forks](https://img.shields.io/github/forks/garzione/takenology?style=social)
-![Pull Requests](https://img.shields.io/github/issues-pr/garzione/takenology?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/garzione/takenology?style=social)
+![GitHub contributors](https://img.shields.io/github/contributors/garzione/WebToLLM?style=social)
+![Forks](https://img.shields.io/github/forks/garzione/WebToLLM?style=social)
+![Pull Requests](https://img.shields.io/github/issues-pr/garzione/WebToLLM?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/garzione/WebToLLM?style=social)
 
 Contributions are welcome! Please fork the repository and submit pull requests!
 
@@ -91,13 +93,13 @@ Follow these steps to install the extension:
 
 <!-- Success Notification -->
 <p style="background-color: #4CAF50; color: white; padding: 5px; border-radius: 4px; display: inline-block;">
-  <img src="icons/takenology.png" alt="Takenology Logo" width="20" style="vertical-align: middle; margin-right: 10px;" />
+  <img src="docs/icons/logo/web2llm.png" alt="WebToLLM Logo" width="20" style="vertical-align: middle; margin-right: 10px;" />
   Example success notification!
 </p>
 
 <!-- Failure Notification -->
 <p style="background-color: #F44336; color: white; padding: 5px; border-radius: 4px; display: inline-block;">
-  <img src="icons/takenology.png" alt="Takenology Logo" width="20" style="vertical-align: middle; margin-right: 10px;" />
+  <img src="docs/icons/logo/web2llm.png" alt="WebToLLM Logo" width="20" style="vertical-align: middle; margin-right: 10px;" />
   Example failure notification.
 </p>
 
@@ -116,31 +118,43 @@ Coming soon!
 ## Structure
 
 ```
-Directory Structure
+WebToLLM
+├── .github
+│   ├── repo-info.yaml
+│   └── workflows
+│       ├── update-docs.yml
+│       └── update-repo-info.yml
+├── .gitignore
 ├── README.md
 ├── css
-│ └── overlay.css
-├── icons
-│ ├── copy-clipboard.png
-│ ├── download-image.png
-│ ├── download-json.png
-│ ├── download-text.png
-│ ├── takenology.gif
-│ └── takenology.png
+│   └── overlay.css
+├── docs
+│   ├── CNAME
+│   ├── icons
+│   │   ├── copy-clipboard.png
+│   │   ├── download-image.png
+│   │   ├── download-json.png
+│   │   ├── download-text.png
+│   │   └── logo
+│   │       ├── web2llm.gif
+│   │       ├── web2llm.png
+│   │       ├── web2llm_mini.png
+│   │       └── web2llm_mini_dark.png
+│   └── index.html
 ├── libs
-│ └── html2canvas.min.js
+│   └── html2canvas.min.js
 ├── manifest.json
 ├── popup.html
 ├── popup.js
 └── scripts
-├── background.js
-├── content_script.js
-└── logging.js
+    ├── background.js
+    ├── content_script.js
+    └── logging.js
 ```
 
 ---
 
-<div style="text-align: left; display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+<!-- <div style="text-align: left; display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
   <div style="text-align: center; margin-bottom: 5px;">
     <a href="https://github.com/garzione" target="_blank" style="text-decoration: none; color: black;">
       <img src="https://github.com/garzione.png" alt="GitHub Profile Picture" width="70" style="border-radius: 50%;"/>
@@ -163,4 +177,6 @@ Directory Structure
       <img src="https://img.shields.io/badge/LinkedIn-black?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
     </a>
   </div>
-</div>
+</div> -->
+
+<iframe src="https://garzione.github.io/readme-footer/" width="100%" height="300px"style="border:none;"></iframe>
