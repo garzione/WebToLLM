@@ -1,0 +1,149 @@
+<!-- /**
+ * WebToLLM - A Chrome extension for capturing web content and transferring it to Large Language Models (LLMs)
+ * @version 1.0.0
+ * @author Justin M. Garzione (Le Pelley Avancée) <contact@lepelley.uk>
+ * @license MIT
+ * @description WebToLLM is a powerful Chrome extension designed to streamline the process of capturing, downloading, and copying webpage elements. Ideal for developers, designers, and researchers, this tool allows users to effortlessly extract and save webpage content, ensuring quick access to necessary data.
+ * @see source: https://github.com/garzione/WebToLLM
+ * @see site: http://web2llm.lepelley.uk
+ */ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebToLLM | Le Pelley Avancée</title>
+    <link rel="icon" href="/WebToLLM/icons/takenology.gif" />
+    <meta
+      name="description"
+      content="Effortlessly capture HTML, CSS, and screenshots from any website to recreate cool UI components using large language models."
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #popup-content {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .navbar img {
+        height: 40px;
+        filter: invert(1);
+      }
+      .navbar h1 {
+        font-size: 30px;
+        margin-left: 10px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 5px; /* Adds 5px space between buttons */
+        flex-wrap: wrap;
+      }
+      .button-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+      }
+      .button-container button::after {
+        content: "↗";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        color: white;
+        display: none;
+      }
+      .button-container .external::after {
+        display: inline;
+      }
+      .button-container .red {
+        background-color: #f44336;
+      }
+      .button-container .black {
+        background-color: #000000;
+      }
+      #docs {
+        display: none;
+        padding: 20px;
+      }
+      #docs .back-icon {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="home">
+      <div id="popup-content">
+        <div class="navbar">
+          <img src="/WebToLLM/icons/takenology.gif" />
+          <h1>WebToLLM</h1>
+        </div>
+        <div class="button-container">
+          <button
+            class="red external"
+            onclick="window.open('https://example.com', '_blank')"
+          >
+            Add to Chrome
+          </button>
+          <button
+            class="black external"
+            onclick="window.open('https://github.com/garzione/WebToLLM', '_blank')"
+          >
+            Source Code
+          </button>
+          <button class="black" onclick="showDocs()">Docs</button>
+        </div>
+      </div>
+    </div>
+    <div id="docs">
+      <div id="popup-content">
+        <div class="navbar">
+          <img
+            src="/WebToLLM/icons/takenology.gif"
+            class="back-icon"
+            onclick="showHome()"
+          />
+          <h1>Docs</h1>
+        </div>
+        <ol>
+          <!-- <li>Step 1: Description of the first step.</li>
+          <li>Step 2: Description of the second step.</li>
+          <li>Step 3: Description of the third step.</li> -->
+          <p>Steps coming soon</p>
+        </ol>
+      </div>
+    </div>
+    <script>
+      function showDocs() {
+        document.getElementById("home").style.display = "none";
+        document.getElementById("docs").style.display = "block";
+      }
+      function showHome() {
+        document.getElementById("home").style.display = "block";
+        document.getElementById("docs").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

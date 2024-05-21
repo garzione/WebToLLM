@@ -21,7 +21,7 @@
         "css/overlay.css",
         "libs/html2canvas.min.js",
         "scripts/logging.js",
-        "icons/takenology.png"
+        "icons/logo/web2llm.png"
       ],
       "matches": ["<all_urls>"]
     }
@@ -30,9 +30,9 @@
     "default_popup": "popup.html"
   },
   "icons": {
-    "16": "icons/takenology.png",
-    "48": "icons/takenology.png",
-    "128": "icons/takenology.png"
+    "16": "icons/logo/web2llm.png",
+    "48": "icons/logo/web2llm.png",
+    "128": "icons/logo/web2llm.png"
   },
   "commands": {
     "capture_element": {

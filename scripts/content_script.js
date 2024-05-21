@@ -223,7 +223,7 @@ function captureElement(element) {
 function showNotification(message, type = "success") {
   const notification = document.createElement("div");
   const icon = document.createElement("img");
-  icon.src = chrome.runtime.getURL("icons/takenology.png");
+  icon.src = chrome.runtime.getURL("icons/logo/web2llm.png");
   icon.style.height = "20px";
   icon.style.marginRight = "10px";
 

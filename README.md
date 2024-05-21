@@ -1,7 +1,7 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <div style="display: flex; align-items: center;">
     <a href="https://github.com/garzione/takenology">
-      <img src="icons/takenology.gif" alt="Takenology Logo" width="50"/>
+      <img src="icons/logo/web2llm.gif" alt="Takenology Logo" width="50"/>
     </a>
     <span style="font-size: 2em; font-weight: bold; margin-left: 10px;">WebToLLM</span>
   </div>
