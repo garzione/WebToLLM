@@ -26,8 +26,18 @@
         height: 100%;
         font-family: Arial, sans-serif;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        text-align: center;
       }
       #popup-content {
         text-align: center;
@@ -91,49 +101,62 @@
       #docs .back-icon {
         cursor: pointer;
       }
+      footer {
+        padding: 10px;
+        background-color: #f1f1f1;
+        width: 100%;
+        text-align: center;
+      }
+      footer a {
+        color: #000;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
-    <div id="home">
-      <div id="popup-content">
-        <div class="navbar">
-          <img src="icons/logo/web2llm.gif" />
-          <h1>WebToLLM</h1>
-        </div>
-        <div class="button-container">
-          <button
-            class="red external"
-            onclick="window.open('https://example.com', '_blank')"
-          >
-            Add to Chrome
-          </button>
-          <button
-            class="black external"
-            onclick="window.open('https://github.com/garzione/WebToLLM', '_blank')"
-          >
-            Source Code
-          </button>
-          <button class="black" onclick="showDocs()">Docs</button>
+    <div id="container">
+      <div id="home">
+        <div id="popup-content">
+          <div class="navbar">
+            <img src="icons/logo/web2llm.gif" />
+            <h1>WebToLLM</h1>
+          </div>
+          <div class="button-container">
+            <button
+              disabled
+              class="red external"
+              onclick="window.open('https://example.com', '_blank')"
+            >
+              Add to Chrome
+            </button>
+            <button
+              class="black external"
+              onclick="window.open('https://github.com/garzione/WebToLLM', '_blank')"
+            >
+              Source Code
+            </button>
+            <button class="black" onclick="showDocs()">Docs</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="docs">
-      <div id="popup-content">
-        <div class="navbar">
-          <img
-            src="icons/logo/web2llm.gif"
-            class="back-icon"
-            onclick="showHome()"
-          />
-          <h1>Docs</h1>
+      <div id="docs">
+        <div id="popup-content">
+          <div class="navbar">
+            <img
+              src="icons/logo/web2llm.gif"
+              class="back-icon"
+              onclick="showHome()"
+            />
+            <h1>Docs</h1>
+          </div>
+          <ol>
+            <p>Steps coming soon</p>
+          </ol>
         </div>
-        <ol>
-          <!-- <li>Step 1: Description of the first step.</li>
-          <li>Step 2: Description of the second step.</li>
-          <li>Step 3: Description of the third step.</li> -->
-          <p>Steps coming soon</p>
-        </ol>
       </div>
+      <footer>
+        <a href="PrivacyPolicy.html">Privacy Policy</a>
+      </footer>
     </div>
     <script>
       function showDocs() {
