@@ -154,29 +154,4 @@ WebToLLM
 
 ---
 
-<!-- <div style="text-align: left; display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-  <div style="text-align: center; margin-bottom: 5px;">
-    <a href="https://github.com/garzione" target="_blank" style="text-decoration: none; color: black;">
-      <img src="https://github.com/garzione.png" alt="GitHub Profile Picture" width="70" style="border-radius: 50%;"/>
-      <p style="margin-top: 5px; color: white; font-size: 1.2em;">@garzione</p>
-    </a>
-    <a href="https://www.buymeacoffee.com/garzione" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="auto" width="20%"></a>
-
-  </div>
-  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-    <a href="https://garzi.one" target="_blank">
-      <img src="https://img.shields.io/badge/GARZI.ONE-silver?style=for-the-badge&logo=garzi-black&logoColor=white" alt="garzi.one"/>
-    </a>
-    <a href="https://x.com/garzione" target="_blank">
-      <img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" alt="X Badge"/>
-    </a>
-    <a href="https://huggingface.co/garzione" target="_blank">
-      <img src="https://img.shields.io/badge/HuggingFace-black?style=for-the-badge&logo=huggingface&logoColor=white" alt="HuggingFace Badge"/>
-    </a>
-    <a href="https://www.linkedin.com/in/justingarzione/" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-black?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-    </a>
-  </div>
-</div> -->
-
-<iframe src="https://garzione.github.io/readme-footer/" width="100%" height="300px"style="border:none;"></iframe>
+![Footer](https://raw.githubusercontent.com/garzione/readme-footer/main/footer.svg)
