@@ -154,4 +154,4 @@ WebToLLM
 
 ---
 
-![Footer](https://raw.githubusercontent.com/garzione/readme-footer/main/footer.svg)
+<!-- ![Footer](https://garzione.github.io/readme-footer/) -->

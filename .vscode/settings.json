@@ -1,0 +1,20 @@
+{
+  "editor.foldingStrategy": "auto",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "meta.embedded.block.svg",
+        "settings": {
+          "folding": {
+            "start": "<image[^>]*?xlink:href=\"data:image\\/[a-zA-Z]+;base64,.*?",
+            "end": ".*?/>",
+            "kind": "region"
+          }
+        }
+      }
+    ]
+  },
+  "[svg]": {
+    "editor.foldingStrategy": "indentation"
+  }
+}
